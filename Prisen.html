@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LTA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="CSS/prisen.css"/>
+</head>
+<body class="form-v9">
+
+
+
+	<nav class="navbar">
+		<!-- LOGO -->
+		<div class="logo">VAL-JSD</div>
+		<!-- NAVIGATION MENU -->
+		<ul class="nav-links">
+		  <!-- USING CHECKBOX HACK -->
+		  <input type="checkbox" id="checkbox_toggle" />
+		  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+		  <!-- NAVIGATION MENUS -->
+		  <div class="menu">
+			<li><a href="database.html">Hjem</a></li>
+			<li><a href="Teamet.html">Om os</a></li>
+			<li class="services">
+			  <a href="/">Projekter +</a>
+			  <!-- DROPDOWN MENU -->
+			  <ul class="dropdown">
+				<li><a href="/">LTA</a></li>
+				<li><a href="/">Regnskabsmaskinen</a></li>
+				<li><a href="/">Marketingsting</a></li>
+				<li><a href="/">Websider</a></li>
+				<li><a href="/">NFT-lingende ting</a></li>
+			  </ul>
+			</li>
+			<li><a href="Prisen.html">Produkter</a></li>
+			<li><a href="/">Kontakt os</a></li>
+		  </div>
+		</ul>
+	  </nav>
+
+      <div class="header">
+        <h1>Produkter</h1>
+        <p>Monster dyre produkter</p>
+      </div>
+
+      <div class="container">
+        <h3>
+          Produkter <span></span>
+        </h3>
+        <ul class="grid">
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/lillemand.png" />
+              <div class="card__text">
+                Lille mand
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/ræv.png" />
+              <div class="card__text">
+                Ræv
+              </div>
+              <div class="card__price"></div>
+            </a>
+        
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/får.png" />
+              <div class="card__text">
+                Får
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="./produkter.html"><img class="card__image" src="./Billeder/abe.png" />
+              <div class="card__text">
+                Abe
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/løve.png" />
+              <div class="card__text">
+                Løve
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/bjørn.png" />
+              <div class="card__text">
+                bjørn
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/sæl.png" />
+              <div class="card__text">
+               Sæl
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="./produkt2.html"><img class="card__image" src="./Billeder/ørn.png" />
+              <div class="card__text">
+                Ørn          
+                  </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+          <li class="card">
+            <a class="card__link" href="#"><img class="card__image" src="./Billeder/bæver.png" />
+              <div class="card__text">
+                Bæver
+              </div>
+              <div class="card__price"></div>
+            </a>
+          </li>
+        
+       
+         
+        </ul>
+        <script>
+          const exampleNames = [
+  "Lille mand",
+  "Ræv",
+  "Får",
+  "Abe",
+  "Løven",
+  "Bjørn",
+  "Sæl",
+  "Ørn",
+  "Bæver",
+  
+];
+
+document.querySelectorAll(".card__price").forEach((price) => {
+  let randomPrice = Math.floor(Math.random() * 100) + 1;
+  price.textContent = `DKK${randomPrice}.99`;
+});
+
+document.querySelectorAll(".card__text").forEach((name, i) => {
+  name.textContent = exampleNames[i % exampleNames.length];
+});
+
+document.querySelector(
+  ".grid .card:nth-child(1) img"
+)
+
+        </script>
+      </div>
+      <footer>
+        Skabt af VAL-JSD
+      </footer>
+
+  </html>
